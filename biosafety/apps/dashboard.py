@@ -10,10 +10,13 @@ class BiosafetyDashboard(BaseWidget):
     #### ORQUESTRA CONFIGURATION ###########################
     ########################################################
     LAYOUT_POSITION = conf.ORQUESTRA_HOME
-    ORQUESTRA_MENU = 'middle-left'
+    ORQUESTRA_MENU = 'user'
     ORQUESTRA_MENU_ORDER = 40
     ORQUESTRA_MENU_ICON = 'heartbeat red'
     ########################################################
+    
+    
+    AUTHORIZED_GROUPS = ['superuser']
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
