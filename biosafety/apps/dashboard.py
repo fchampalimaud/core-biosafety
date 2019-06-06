@@ -10,8 +10,8 @@ class BiosafetyDashboard(BaseWidget):
     #### ORQUESTRA CONFIGURATION ###########################
     ########################################################
     LAYOUT_POSITION = conf.ORQUESTRA_HOME
-    ORQUESTRA_MENU = 'user'
-    ORQUESTRA_MENU_ORDER = 40
+    ORQUESTRA_MENU = 'left'
+    ORQUESTRA_MENU_ORDER = 999
     ORQUESTRA_MENU_ICON = 'heartbeat red'
     ########################################################
     
