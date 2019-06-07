@@ -15,16 +15,22 @@ class RiskAdminApp(ModelAdminWidget):
     #LIST_FILTER    = ['id','code','label','url','description']
 
     #list of fields to display in the table
-    #LIST_DISPLAY   = ['id','code','label','url','description']
+    LIST_DISPLAY = ['code','label',]
+    LIST_HEADERS = ['Code', 'Short description']
     
     #fields to be used in the search
-    #SEARCH_FIELDS  = ['id','code','label','url','description']
+    SEARCH_FIELDS  = ['code__icontains','label__icontains','description__icontains']
     
     #sub models to show in the interface
     #INLINES        = []
     
     #formset of the edit form
-    #FIELDSETS      = ['id','code','label','url','description']
+    FIELDSETS = [
+        ('code', ' '),
+        'label',
+        'url',
+        'description'
+    ]
     
     #read only fields
     #READ_ONLY      = ['id','code','label','url','description']
